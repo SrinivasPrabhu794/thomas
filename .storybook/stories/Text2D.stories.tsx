@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { withKnobs } from '@storybook/addon-knobs'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { MapControls } from '@react-three/drei'
+import { MapControls } from '@srinivasprabhu/drei'
 import { Perf } from 'r3f-perf/dist/components/Perf.js'
 import { Matrix4, Color } from 'three'
 import { uniqueId } from 'lodash'

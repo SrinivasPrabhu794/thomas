@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { MeshPhongMaterial, NearestFilter, Texture, Vector3 } from 'three'
-import { useTexture } from '@react-three/drei'
+import { useTexture } from '@srinivasprabhu/drei'
 
 import { FontInfo3D } from './types'
 

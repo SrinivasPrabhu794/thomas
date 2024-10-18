@@ -1,4 +1,4 @@
-import { useTexture } from '@react-three/drei'
+import { useTexture } from '@srinivasprabhu/drei'
 import { MeshProps, useFrame, useLoader } from '@react-three/fiber'
 import * as React from 'react'
 import { PropsWithChildren, useLayoutEffect, useMemo, useState } from 'react'

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { withKnobs } from '@storybook/addon-knobs'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls } from '@srinivasprabhu/drei'
 import { Perf } from 'r3f-perf/dist/components/Perf.js'
 
 import { InstancedTextProvider, InstancedText } from '../../src'
