@@ -3181,9 +3181,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@srinivasprabhu/drei@npm:1.0.7":
-  version: 1.0.7
-  resolution: "@srinivasprabhu/drei@npm:1.0.7"
+"@srinivasprabhu/drei@npm:1.0.10":
+  version: 1.0.10
+  resolution: "@srinivasprabhu/drei@npm:1.0.10"
   dependencies:
     "@babel/runtime": "npm:^7.11.2"
     "@mediapipe/tasks-vision": "npm:0.10.8"
@@ -3201,7 +3201,7 @@ __metadata:
     stats-gl: "npm:^2.0.0"
     stats.js: "npm:^0.17.0"
     suspend-react: "npm:^0.1.3"
-    three-mesh-bvh: "npm:^0.8.0"
+    three-mesh-bvh: "npm:^0.7.0"
     three-stdlib: "npm:^2.29.9"
     troika-three-text: "npm:^0.49.0"
     tunnel-rat: "npm:^0.1.2"
@@ -3216,7 +3216,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 10c0/82b452eeddebb4c182e63ddd1223fd8f20772df94f5ffe8a45a6202a587b829ee24b3bc5f17e3dfb8ccffdbdfd920917a1254492b2f65882fb78e07f14952cc1
+  checksum: 10c0/7fdc22a74090982c3cf6d3f8b1150f70ee115b8347337ef26a820a6bb3eb64a35251ed8ff43735d83972a51883a70d2342d82335dd08456f2c7374d1bde2c7d7
   languageName: node
   linkType: hard
 
@@ -3238,7 +3238,7 @@ __metadata:
     "@rollup/plugin-commonjs": "npm:^19.0.0"
     "@rollup/plugin-json": "npm:^4.1.0"
     "@rollup/plugin-node-resolve": "npm:^13.0.0"
-    "@srinivasprabhu/drei": "npm:1.0.7"
+    "@srinivasprabhu/drei": "npm:1.0.10"
     "@storybook/addon-actions": "npm:^6.5.14"
     "@storybook/addon-controls": "npm:^6.5.14"
     "@storybook/addon-knobs": "npm:^6.4.0"
@@ -3285,11 +3285,11 @@ __metadata:
     word-wrapper: "npm:^1.0.7"
     yarn: "npm:^1.22.17"
   peerDependencies:
-    "@react-three/fiber": ">=8.0"
-    "@srinivasprabhu/drei": ">=1.0.7"
+    "@react-three/fiber": =8.14.3
+    "@srinivasprabhu/drei": ">=1.0.10"
     react: ">=18.0"
     react-dom: ">=18.0"
-    three: ">=0.137"
+    three: =0.151.3
   peerDependenciesMeta:
     react-dom:
       optional: true
@@ -17181,12 +17181,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-mesh-bvh@npm:^0.8.0":
-  version: 0.8.2
-  resolution: "three-mesh-bvh@npm:0.8.2"
+"three-mesh-bvh@npm:^0.7.0":
+  version: 0.7.6
+  resolution: "three-mesh-bvh@npm:0.7.6"
   peerDependencies:
-    three: ">= 0.159.0"
-  checksum: 10c0/6c32c8f857617d43512d46ee357f5b627b6e8a464935b0aac2badb4fdca1869f00ada806a4122c398cc8528033de8a1608f433f6a9d5d6e3526c243be1c0217e
+    three: ">= 0.151.0"
+  checksum: 10c0/caa2e92dc0bffa33624a99a889aa6dcac1eb6251ea01cc1e3414aa220dfbd040d8d85642353647ca18bee0bbfd5efba414e8f07ba7670beeda406bf675864d46
   languageName: node
   linkType: hard
 

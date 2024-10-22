@@ -1,7 +1,6 @@
 {
   "name": "@srinivasprabhu/thomas",
-  "version": "1.0.1",
-  "private": true,
+  "version": "1.0.4",
   "description": "",
   "keywords": [],
   "repository": {
@@ -64,7 +63,7 @@
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
-    "@srinivasprabhu/drei": "1.0.7",
+    "@srinivasprabhu/drei": "1.0.10",
     "@storybook/addon-actions": "^6.5.14",
     "@storybook/addon-controls": "^6.5.14",
     "@storybook/addon-knobs": "^6.4.0",
@@ -110,11 +109,11 @@
     "yarn": "^1.22.17"
   },
   "peerDependencies": {
-    "@react-three/fiber": ">=8.0",
-    "@srinivasprabhu/drei": ">=1.0.7",
+    "@react-three/fiber": "=8.14.3",
+    "@srinivasprabhu/drei": ">=1.0.10",
     "react": ">=18.0",
     "react-dom": ">=18.0",
-    "three": ">=0.137"
+    "three": "=0.151.3"
   },
   "peerDependenciesMeta": {
     "react-dom": {
