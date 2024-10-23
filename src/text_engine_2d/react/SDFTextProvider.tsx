@@ -36,6 +36,7 @@ function StyleGroupRenderer({
   font,
   atlasBold,
   fontBold,
+  depthTest,
   ...rest
 }: {
   instances: ISDFTextInstance[]
@@ -44,6 +45,7 @@ function StyleGroupRenderer({
   font: Font
   atlasBold?: Texture
   fontBold?: Font
+  depthTest?: boolean
 } & MeshProps) {
   const shouldDoBold = atlasBold && fontBold && textStyle.bold
   const fontData = shouldDoBold ? fontBold.data : font.data
@@ -119,7 +121,7 @@ function StyleGroupRenderer({
   return (
     <>
       <mesh geometry={geometry} frustumCulled={false} renderOrder={foreRenderOrder} {...rest}>
-        <mSDFTextMaterial uniforms={uniforms} />
+        <mSDFTextMaterial uniforms={uniforms} depthTest={depthTest} />
       </mesh>
       {(textStyle.outlineWidth ?? 0) > 0 && (
         <mesh geometry={geometry} frustumCulled={false} renderOrder={outlineRenderOrder} {...rest}>
@@ -134,7 +136,8 @@ export function SDFTextProvider({
   children,
   fontPathRegular,
   fontPathBold,
-}: PropsWithChildren<{ fontPathRegular: ISDFFont; fontPathBold?: ISDFFont }>) {
+  depthTest = true,
+}: PropsWithChildren<{ fontPathRegular: ISDFFont; fontPathBold?: ISDFFont; depthTest?: boolean }>) {
   useMemo(registerTextEngineToR3F, [])
 
   const atlas = useTexture(fontPathRegular.sdfPath)
@@ -188,6 +191,7 @@ export function SDFTextProvider({
             font={font}
             atlasBold={Array.isArray(atlasBold) ? undefined : atlasBold}
             fontBold={Array.isArray(fontBold) ? undefined : fontBold}
+            depthTest={depthTest}
           />
         ))}
       </>
