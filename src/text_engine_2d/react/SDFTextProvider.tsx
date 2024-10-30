@@ -142,8 +142,8 @@ export function SDFTextProvider({
 
   const atlas = useTexture(fontPathRegular.sdfPath)
   const font = useLoader(FontLoader, fontPathRegular.fontPath) as Font
-  const atlasBold = useTexture(fontPathBold ? fontPathBold.sdfPath : [])
-  const fontBold = useLoader(FontLoader, fontPathBold ? fontPathBold.fontPath : []) as Font
+  const atlasBold = ''
+  const fontBold = ''
 
   // We have a mutable map of immutable arrays, so we are using a force update
   const instancesGroups = useState<Map<string, ISDFTextStyleGroup>>(() => new Map())[0]
