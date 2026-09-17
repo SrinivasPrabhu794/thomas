@@ -10,6 +10,7 @@ export default class MSDFTextMaterial extends ShaderMaterial {
     const defaultOptions = {
       side: FrontSide,
       transparent: true,
+      clipping: true,
       extensions: {
         derivatives: true,
       },

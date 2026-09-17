@@ -1,4 +1,4 @@
-import { useTexture } from '@srinivasprabhu/drei'
+import { useTexture } from '@react-three/drei'
 import { MeshProps, useFrame, useLoader } from '@react-three/fiber'
 import * as React from 'react'
 import { PropsWithChildren, useLayoutEffect, useMemo, useState } from 'react'
@@ -142,8 +142,8 @@ export function SDFTextProvider({
 
   const atlas = useTexture(fontPathRegular.sdfPath)
   const font = useLoader(FontLoader, fontPathRegular.fontPath) as Font
-  const atlasBold = ''
-  const fontBold = ''
+  const atlasBold: Texture | undefined = undefined
+  const fontBold: Font | undefined = undefined
 
   // We have a mutable map of immutable arrays, so we are using a force update
   const instancesGroups = useState<Map<string, ISDFTextStyleGroup>>(() => new Map())[0]
